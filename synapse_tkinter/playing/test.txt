@@ -1,0 +1,2139 @@
+Draft version October 9, 2019
+Typeset using LATEX twocolumn style in AASTeX63
+
+9
+1
+0
+2
+
+ 
+t
+c
+O
+7
+
+ 
+
+.
+
+ 
+ 
+]
+E
+H
+h
+p
+-
+o
+r
+t
+s
+a
+[
+ 
+ 
+
+1
+v
+2
+6
+0
+3
+0
+
+.
+
+0
+1
+9
+1
+:
+v
+i
+X
+r
+a
+
+Timing the pulsations of the accreting millisecond pulsar SAX J1808.4–3658 during its 2019 outburst
+
+Peter Bult,1 Deepto Chakrabarty,2 Zaven Arzoumanian,1 Keith C. Gendreau,1 Sebastien Guillot,3, 4
+
+Christian Malacaria,5, 6, ∗ Paul. S. Ray,7 and Tod E. Strohmayer8
+
+1Astrophysics Science Division, NASA’s Goddard Space Flight Center, Greenbelt, MD 20771, USA
+
+2MIT Kavli Institute for Astrophysics and Space Research, Massachusetts Institute of Technology, Cambridge, MA 02139, USA
+
+3CNRS, IRAP, 9 avenue du Colonel Roche, BP 44346, F-31028 Toulouse Cedex 4, France
+
+4Universit´e de Toulouse, CNES, UPS-OMP, F-31028 Toulouse, France
+
+5NASA Marshall Space Flight Center, NSSTC, 320 Sparkman Drive, Huntsville, AL 35805, USA
+
+6Universities Space Research Association, NSSTC, 320 Sparkman Drive, Huntsville, AL 35805, USA
+
+7Space Science Division, Naval Research Laboratory, Washington, DC 20375-5352, USA
+
+8Astrophysics Science Division and Joint Space-Science Institute, NASA’s Goddard Space Flight Center, Greenbelt, MD 20771, USA
+
+ABSTRACT
+
+In this paper we present a coherent timing analysis of the 401 Hz pulsations of the accreting mil-
+lisecond X-ray pulsar SAX J1808.4–3658 during its 2019 outburst. Using observations collected with
+the Neutron Star Interior Composition Explorer (NICER), we establish the pulsar spin frequency and
+orbital phase during its latest epoch. We ﬁnd that the 2019 outburst shows a pronounced evolution in
+pulse phase over the course of the outburst. These phase shifts are found to correlate with the source
+ﬂux, and are interpreted in terms of hot-spot drift on the stellar surface, driven by changes in the mass
+accretion rate. Additionally, we ﬁnd that the long-term evolution of the pulsar spin frequency shows
+evidence for a modulation at the Earth’s orbital period, enabling pulsar timing based astrometry of
+this accreting millisecond pulsar.
+
+Keywords: stars: neutron – X-rays: binaries – X-rays: individual (SAX J1808.4–3658)
+
+1. INTRODUCTION
+
+The low-mass X-ray binary SAX J1808.4–3658 (here-
+after SAX J1808) is the canonical example of an accret-
+ing millisecond X-ray pulsar (AMXP). First discovered
+as an X-ray source in 1996 with the BeppoSAX satel-
+lite (in ’t Zand et al. 1998), it was not until 1998 that
+the detection of 401 Hz pulsations with the Rossi X-ray
+Timing Explorer (RXTE ) established this source as the
+ﬁrst known AMXP (Wijnands & van der Klis 1998).
+Over the two decades since this discovery, the sample
+size of known AMXPs has grown substantially (Patruno
+& Watts 2012; Campana & Di Salvo 2018). Despite this
+growth, however, SAX J1808 remains the cornerstone
+of its class. This status is in part due to its relatively
+close proximity, at an estimated distance of 3.5 kpc (Gal-
+loway & Cumming 2006), and in part due to its short,
+semi-regular outburst recurrence times of 2 − 4 years.
+Together, these qualities have enabled extensive inves-
+tigations of its pulsations (Poutanen & Gierli´nski 2003;
+Hartman et al. 2008; Burderi et al. 2009; Patruno et al.
+2017; Sanna et al. 2017), its aperiodic variability (Wi-
+jnands et al. 2001; Patruno et al. 2009b; Bult & van
+der Klis 2015a,b), its spectral characteristics (Gierli´nski
+
+∗ NASA Postdoctoral Fellow
+
+et al. 2002; Cackett et al. 2009; Papitto et al. 2009; Di
+Salvo et al. 2019), and its thermonuclear X-ray bursts
+(in ’t Zand et al. 2001; Chakrabarty et al. 2003; Gal-
+loway & Cumming 2006; Bhattacharyya & Strohmayer
+2007; in ’t Zand et al. 2013).
+
+The characteristic property of an AMXP is its coher-
+ently pulsed emission. These oscillations have nearly si-
+nusoidal proﬁles that are attributed to a localized emis-
+sion region, a hot-spot, on the neutron star surface.
+Such a hot-spot arises due to the dynamically relevant
+stellar magnetosphere, which channels in-falling plasma,
+so that the accretion column impacts the stellar surface
+in conﬁned regions near the magnetic poles. These pul-
+sations reveal a host of information about the neutron
+star, with the precise waveform encoding information on
+the stellar compactness (Poutanen & Gierli´nski 2003),
+and their phase evolution with time revealing the spin
+evolution of the binary and star itself (Hartman et al.
+2008).
+
+For SAX J1808 speciﬁcally, coherent timing analyses
+of the pulsations revealed that the X-ray outbursts do
+not show a measurable accretion-powered spin change
+(Hartman et al. 2008, 2009; Patruno et al. 2012, 2017;
+Sanna et al. 2017), while between outbursts the source
+spins down at a steady rate of ≈ 1.5 × 10−15 Hz s−1.
+Additionally, these analyses revealed the 2.01 hr bi-
+nary orbit (Chakrabarty & Morgan 1998), and estab-
+
+2
+
+lished a peculiar long-term variation of the binary pe-
+riod. The ﬁrst decade of monitoring showed that the
+binary period was expanding at an anomalously fast
+rate of ≈ 3.5 × 10−12 s s−1 (di Salvo et al. 2008; Hart-
+man et al. 2008), which was explained as being due to
+highly non-conservative mass-transfer (di Salvo et al.
+2008; Burderi et al. 2009), or, alternatively, due to spin-
+orbit angular momentum exchange in the companion
+star (Hartman et al. 2008; Patruno et al. 2012), akin
+to short-term orbital variability observed in millisecond
+“black widow” radio pulsars (Arzoumanian et al. 1994;
+Doroshenko et al. 2001). Later outbursts, in 2011 and
+2015, showed that the rate of orbital expansion is itself
+evolving rapidly. These measurements have been anal-
+ysed in great detail (Patruno et al. 2017; Sanna et al.
+2017), but for a lack of data points, no single conclusion
+could yet be reached.
+
+On 2019 July 30, Russell et al. (2019a) reported a
+brightening in the optical i’-band from the direction of
+SAX J1808, which is often a precursor to a full X-ray
+outburst (Russell et al. 2019b). Although this predictor
+had not previously been tested for SAX J1808 specif-
+ically, various X-ray, UV, and radio observatories were
+triggered to monitor SAX J1808 over the following days.
+On 2019 August 6 a further increase in the optical i’-
+band was observed, coincident with a ﬂux increase in the
+X-ray band (Goodwin et al. 2019b) and UV (Parikh &
+Wijnands 2019), suggesting the source was indeed start-
+ing a new outburst. On 2019 August 7 the X-ray ﬂux
+started increasing rapidly, and the detection of 401 Hz
+pulsations (Bult et al. 2019c) with the Neutron Star In-
+terior Composition Explorer (NICER; Gendreau & Ar-
+zoumanian 2017) conﬁrmed that SAX J1808 was indeed
+active again.
+
+Following conﬁrmation of a new outburst, we executed
+an extensive, high cadence monitoring campaign with
+NICER. In this paper we report on a timing analysis of
+the coherent pulsations for these data.
+
+2. OBSERVATIONS
+
+We observed SAX J1808 with NICER between 2019
+July 30 and 2019 August 31 for a total unﬁltered ex-
+posure of 355.4 ks. These data are available under pro-
+gram/target numbers 205026 and 258401. At the time
+of the ﬁnal observation included in the present analy-
+sis, the source had completed the high luminosity phase
+of its outburst cycle, but remained visible in its char-
+acteristic prolonged ﬂaring tail (Wijnands et al. 2001;
+Patruno et al. 2009b, 2016; Bult et al. 2019b).
+
+We processed all data using nicerdas version 6a,
+which is distributed as part of heasoft v6.26. We
+applied standard screening criteria, limiting our anal-
+ysis to time intervals with a pointing oﬀset < 54(cid:48)(cid:48), a
+bright Earth limb angle > 30◦, a dark Earth limb an-
+gle > 15◦, and collected outside the South Atlantic
+Anomaly. The standard processing also applies a back-
+ground screening ﬁlter, which rejects all time inter-
+
+vals where the rate of saturating particle events (over-
+shoots) is greater than 1 ct s−1 detector−1, or greater
+than 1.52 × cor sax−0.633, where cor sax1 gives the
+cut-oﬀ rigidity of the Earth’s magnetic ﬁeld, in units
+of GeV c−1. For the SAX J1808 observations, we ﬁnd
+that this approach is often too conservative, as statis-
+tical ﬂuctuations in the overshoot rate are leading to
+many unnecessary 1 − 10 s gaps in the light curve. We
+therefore applied a smoothing average ﬁlter to the over-
+shoot light curve using a 5 second window. Addition-
+ally, we relaxed the cut-oﬀ threshold for the overshoots
+to 1.5 ct s−1 detector−1 and increased the scaling factor
+of the cor sax expression from 1.52 to 2.0. A visual
+comparison of light curves based on standard and re-
+laxed ﬁltering showed that no spurious signals were in-
+troduced in this way. Using these criteria, we retained
+257.7 ks of good time exposure. These good time data
+were corrected to the Solar System barycenter using the
+barycorr tool, where we used the optical coordinates
+of Hartman et al. (2008) and the JPL DE405 planetary
+ephemeris (Standish 1998). All times reported in this
+work are therefore expressed in units of Barycentric Dy-
+namical Time (TDB). Finally, we estimated the back-
+ground contributions to our data from NICER obser-
+vations of the RXTE blank-ﬁeld regions (Jahoda et al.
+2006).
+
+Two thermonuclear X-ray bursts were observed with
+NICER, the ﬁrst on August 9 and the second on August
+21. We exclude both events from the analysis presented
+here. An initial analysis of the second bursts is presented
+in Bult et al. (2019a). An analysis of the ﬁrst burst,
+and a separate, detailed review of the spectroscopic and
+stochastic variability will be presented elsewhere.
+
+3. COHERENT TIMING
+
+We performed a coherent timing analysis of the 401 Hz
+pulsations of SAX J1808. For each continuous good-
+time interval we corrected the photon arrival times for
+the Doppler delays of the binary motion based on the
+preliminary ephemeris of Bult et al. (2019c). We then
+folded the data on the pulsar period to construct a pulse
+proﬁle. This proﬁle was decomposed into its Fourier
+components by ﬁtting a constant plus k harmonic sinu-
+soids. Each sinusoid thus has a ﬁxed frequency νk = kνp,
+where νp is the pulsar spin frequency. Additionally, for
+each sinusoid we determined the phase, ϕk, and ampli-
+tude, Ak, from which we derive a ﬁducial pulse arrival
+time and a fractional sinusoidal amplitude, r, as
+
+r =
+
+Ak
+
+Nγ − B
+
+,
+
+(1)
+
+where Nγ gives the number of photons in the pulse
+proﬁle, and B gives the estimated number of photons
+
+1 The cor sax parameter is based on a model for the cut-oﬀ rigid-
+ity that was originally developed for the BeppoSAX satellite. It
+has no relation to the source SAX J1808.
+
+contributed by the background emission. A harmonic
+was deemed signiﬁcant if its measured amplitude ex-
+ceeded the 99% conﬁdence amplitude threshold of the
+noise distribution. When a harmonic was not signiﬁ-
+cantly detected, we instead computed an upper limit on
+the amplitude as the minimum signal that would have
+produced a measured amplitude in excess of the noise
+threshold 95% of the time.
+
+Pulsations at the fundamental frequency are detected
+at high signiﬁcance throughout the outburst (Figure 1,
+1st and 2nd panel). For a number of segments, however,
+the integration time was too short to reach a detection.
+Given the small number of cases, we did not attempt
+to combine these segments with neighboring intervals,
+and show an upper limit on the amplitude instead. The
+second harmonic was rarely detected, mainly because its
+amplitude is small below 3 keV (Patruno et al. 2009a),
+where NICER is most sensitive.
+Indeed, by accumu-
+lating more exposure in each pulse proﬁle, we could
+detect the second harmonic signiﬁcantly in more seg-
+ments. However, the required integration times were
+long (> 5 ks), greatly reducing the number of measured
+pulse arrival times. Hence, we focus our analysis on the
+arrival times of the fundamental pulsation.
+
+The series of pulse arrival times was modeled as a
+constant spin frequency and a circular Keplerian orbit
+using tempo2 (Hobbs et al. 2006). Hence, our initial
+model consisted of four parameters: the binary orbital
+period, Pb, the projected semi-major axis, ax sin i, the
+time of passage through the ascending node, Tasc, and
+the spin frequency, νp. After an initial ﬁt, we repeated
+the epoch-folding method using the reﬁned ephemeris,
+and repeated the entire procedure until the solution con-
+verged.
+
+At a reduced χ2 (χ2
+
+r ) of 7.2 for 259 degrees of freedom
+(dof), we ﬁnd that our initial model provided a poor de-
+scription to the set of arrival times, leaving an approxi-
+mately parabolic trend in the phase residuals (Figure 1,
+3rd panel). This trend suggests that the spin frequency
+is changing over the course of the outburst. Indeed, in-
+cluding a spin frequency derivative in our timing model
+improves the ﬁt statistic to a χ2
+r of 2.27 for 258 dof. Con-
+sidering the ﬁt residuals, however, we ﬁnd large phase
+residuals near the start and end of our data set (Figure
+1, 4th panel). This suggests that additional, higher spin
+frequency derivatives, for which there is little physical
+motivation, are needed to describe the data
+
+An important consideration in the coherent timing
+is
+analysis of accreting millisecond pulsars, however,
+leading to
+that the pulse proﬁles can change shape,
+both gradual and abrupt shifts in the observed phase
+(see Patruno & Watts 2012, for a review). Indeed, in
+SAX J1808 the pulse waveform is known to be sensitive
+to the source ﬂux (Patruno et al. 2009c). We therefore
+generalized our timing model by expressing the pulsar
+
+3
+
+Figure 1. Temporal evolution of the 2019 outburst of
+SAX J1808. Top panel: the 0.5 − 10 keV light curve. Sec-
+ond panel: pulse fractional sinusoidal amplitudes, with solid
+triangles giving the upper limits for non-detections of the
+fundamental component, and open triangles the upper limits
+for the second harmonic. Third through ﬁfth panels: pulse
+phase residuals relative to the indicated phase model (see
+also Table 1).
+
+phase as
+
+ϕ(t, F ) = ϕ0 + νpt + ϕorb(t) + ϕbias(Fbol),
+
+(2)
+
+where ϕ0 gives a reference phase, νpt gives the linear
+term due to the constant spin frequency, ϕorb(t) gives
+
+07-Aug
+
+12-Aug
+
+17-Aug
+
+22-Aug
+
+27-Aug
+
+01-Sep
+
+upper limit
+detection
+
+ 
+
+fundamental
+2nd harmonic
+
+Linear phase model
+
+Quadratic phase model
+
+Flux-adjusted phase model
+
+ 300
+
+ 250
+
+ 200
+
+ 150
+
+ 100
+
+ 50
+
+ 0
+ 14
+ 12
+ 10
+ 8
+ 6
+ 4
+ 2
+ 0
+ 0.2
+ 0.1
+ 0
+-0.1
+-0.2
+ 0.2
+ 0.1
+ 0
+-0.1
+-0.2
+ 0.2
+ 0.1
+ 0
+-0.1
+-0.2
+
+)
+s
+/
+c
+(
+ 
+e
+t
+a
+r
+ 
+t
+n
+u
+o
+C
+
+)
+
+%
+
+(
+ 
+e
+d
+u
+t
+i
+l
+
+p
+m
+A
+
+ 
+l
+a
+n
+o
+i
+t
+c
+a
+r
+F
+
+)
+s
+e
+l
+c
+y
+c
+(
+ 
+l
+a
+u
+d
+i
+s
+e
+r
+ 
+e
+s
+a
+h
+P
+
+)
+s
+e
+l
+c
+y
+c
+(
+ 
+ 
+l
+a
+u
+d
+i
+s
+e
+r
+ 
+e
+s
+a
+h
+P
+
+)
+s
+e
+l
+c
+y
+c
+(
+ 
+l
+a
+u
+d
+i
+s
+e
+r
+ 
+e
+s
+a
+h
+P
+
+58700
+
+58705
+
+58710
+
+58715
+Time (MJD)
+
+58720
+
+58725
+
+4
+
+the phase correction associated with the binary orbit,
+and ϕbias(Fbol) gives a phase-bias correction term as
+a function of bolometric ﬂux, Fbol.
+In order to spec-
+ify a bias function, we note that numerical simulations
+indicate that the azimuthal position of the hot-spot is
+proportional to the magnetospheric radius (Kulkarni &
+Romanova 2013). Additionally, the magnetospheric ra-
+dius is predicted to scale with the mass accretion rate as
+˙M−1/5 (D’Angelo & Spruit 2010; Kulkarni & Romanova
+2013). Since ˙M should be proportional to the bolomet-
+ric ﬂux, we deﬁne a simple power-law model
+
+bol,
+
+ϕbias(Fbol) = bF Γ
+
+(3)
+with Γ ﬁxed at −1/5, and b a free scaling factor, which
+we will refer to as the scale of the bias. Finally, for sim-
+plicity, we use count-rate as an approximate substitute
+for the ﬂux. Applying this generalized model to our ar-
+rival times, we obtain a χ2
+r of 2.08 for 258 dof. While this
+ﬁt statistic is still not formally acceptable, it performs
+better than the quadratic phase model. Furthermore,
+we note that phase residuals for this model (Figure 1,
+5th panel) are no longer structured, such that the poor
+statistic can be attributed to residual timing noise (Pa-
+truno & Watts 2012).
+
+Finally, we note that our data quality is suﬃcient that
+the Keplerian parameters describing the binary orbit
+are eﬀectively decoupled from the parameters describ-
+ing the spin frequency evolution.
+Indeed, in all three
+models discussed above, the Keplerian parameters agree
+within their respective uncertainties. Hence, in Table
+1 we list the best-ﬁt timing solution for the orbit sep-
+arately from spin frequency parameters obtained from
+the three phase models.
+
+4. PULSE ENERGY DEPENDENCE
+
+To investigate the photon-energy dependence of the
+pulsations, we applied a sliding window method in en-
+ergy space. That is, we selected all data in a 0.25 keV
+wide window and measured the resulting pulse proﬁle
+properties. We then repeated this analysis by mov-
+ing the window from 0.5 keV to 10 keV using steps of
+0.1 keV. This method was applied to four representa-
+tive time intervals. The ﬁrst interval covers August 10
+through 17, which is when the outburst peaked and the
+broad-band fractional pulse amplitude remained con-
+stant at 5%. The second interval covers August 18
+through 20, which is where the source ﬂux showed a
+re-brightening with respect to its long-term decay, and,
+likewise, the broad-band fractional pulse amplitude tem-
+porarily increased to 7%. The third interval covers Au-
+gust 21 through 25, where the outburst continued its
+decay and the fractional pulse amplitude varied between
+4% and 7%. Finally, the fourth group covers August 26
+through 31 where the source began to transition to its
+ﬂaring state, and the broad-band fractional pulse ampli-
+tude increased above 7%, indicating an associated tran-
+
+Table 1.
+SAX J1808.
+
+Timing solution for the 2019 outburst of
+
+Parameter
+
+Epoch (MJD)
+
+ax sin i (lt-ms)
+Pb (s)
+Tasc (MJD)
+
+
+Value
+
+58715
+
+62.8091
+
+7249.1552
+
+58715.0221031
+< 3 × 10−4
+
+Uncertainty
+
+-
+7.4×10−3
+3.0×10−3
+2.0×10−6
+
+Linear phase model
+
+ν (Hz)
+χ2/dof
+
+400.975209741
+
+1854.79/259
+
+Quadratic phase model
+
+ν (Hz)
+˙ν (Hz s−1)
+χ2/dof
+
+400.975210055
+−3.02 × 10−13
+585.30/258
+
+Flux-adjusted phase model
+
+ν (Hz)
+
+b
+
+Γ
+χ2/dof
+
+400.975209833
+−0.87
+−1/5
+535.95/258
+
+1.2×10−8
+
+2.8×10−8
+1.3×10−14
+
+1.0×10−8
+0.03
+
+ﬁxed
+
+Note—Uncertainties give the 1σ statistical errors and the
+upper limit is quoted at the 95% c.l. The  parameter gives
+the orbital eccentricity.
+
+sition in the pulse waveform. The resulting pulse ampli-
+tude and phase spectra are shown in Figure 2.
+
+Consistent with previous results (Patruno et al. 2009a;
+Sanna et al. 2017), we ﬁnd that the pulse amplitude in-
+creases with energy up to ≈ 2 keV, and then ﬂattens
+oﬀ (top panel). More interesting, however, is to note
+that the overall pulse energy spectrum shows signiﬁcant
+evolution with time. As the source brieﬂy re-brightens
+during its decay (second panel), the amplitude spectrum
+hardens, but the phase remains mostly the same. How-
+ever, as the source intensity drops further, the phase
+residuals below 2 keV begin to pivot, as the fractional
+amplitudes below 2 keV show large variations (third and
+bottom panels).
+
+5. LONG TERM EVOLUTION
+
+5.1. Spin frequency
+
+Between 1998 and 2011,
+
+the spin frequency of
+SAX J1808 decreased at a constant rate (Patruno et al.
+2012; for the 2015 outburst, see discussion). In Figure 3
+we compare the three spin frequencies measured for the
+2019 data with this established spin-down trend. The
+historic data for this comparison was adopted from Hart-
+man et al. (2008, 2009) and Patruno et al. (2012). The
+frequencies of the linear and ﬂux-adjusted phase models
+
+5
+
+Figure 2. Energy resolved pulse fractional amplitude (left) and phase (right). Each panel shows a spectrum for the indicated
+time interval in black, with the other three intervals plotted in grey for context.
+
+Interval 1
+
+Interval 2
+
+Interval 3
+
+Interval 4
+
+)
+
+%
+
+(
+ 
+e
+d
+u
+t
+i
+l
+
+p
+m
+A
+
+)
+
+%
+
+(
+ 
+e
+d
+u
+t
+i
+l
+
+p
+m
+A
+
+)
+
+%
+
+(
+ 
+e
+d
+u
+t
+i
+l
+
+p
+m
+A
+
+)
+
+%
+
+(
+ 
+e
+d
+u
+t
+i
+l
+
+p
+m
+A
+
+ 10
+ 8
+ 6
+ 4
+ 2
+
+ 10
+ 8
+ 6
+ 4
+ 2
+
+ 10
+ 8
+ 6
+ 4
+ 2
+
+ 10
+ 8
+ 6
+ 4
+ 2
+
+0.5
+
+1.0
+
+2.0
+
+5.0
+
+10
+
+Energy (keV)
+
+)
+s
+e
+l
+c
+y
+c
+(
+ 
+e
+s
+a
+h
+P
+
+)
+s
+e
+l
+c
+y
+c
+(
+ 
+e
+s
+a
+h
+P
+
+)
+s
+e
+l
+c
+y
+c
+(
+ 
+e
+s
+a
+h
+P
+
+)
+s
+e
+l
+c
+y
+c
+(
+ 
+e
+s
+a
+h
+P
+
+ 0.2
+
+ 0.1
+
+ 0
+
+-0.1
+
+-0.2
+
+ 0.2
+
+ 0.1
+
+ 0
+
+-0.1
+
+-0.2
+
+ 0.2
+
+ 0.1
+
+ 0
+
+-0.1
+
+-0.2
+
+ 0.2
+
+ 0.1
+
+ 0
+
+-0.1
+
+-0.2
+
+0.5
+
+1.0
+
+2.0
+
+5.0
+
+10
+
+Energy (keV)
+
+6
+
+both conﬁrm a continuation of the long-term spin-down.
+The frequency derived from the quadratic phase model,
+however, lies well away from the trend. To quantita-
+tively model the spin frequency evolution, we adopt the
+frequency from the linear phase model, as that model is
+the most similar to the historic data (see Section 6.1).
+
+While there is a clear decreasing trend in the long
+term evolution of the spin frequency, a linear function
+does not provide a statistically acceptable description of
+these data (χ2
+r of 5.1 for 5 dof). If we remove the long-
+term linear spin-down trend, and consider the residuals
+as a function of day of year, we observe an apparently si-
+nusoidal modulation at the Earth’s orbital period. This
+result suggests that our source coordinates are slightly
+oﬀset from the optical position, such that the barycen-
+ter correction leaves a small periodic Doppler shift in
+the data (Manchester & Peters 1972; Manchester et al.
+1974; Lyne & Graham-Smith 1990).
+
+To account for the uncertainty in the source coordi-
+nates, we modeled the long-term evolution of the spin
+frequency as a linear trend plus a correction term for
+the residual Doppler shift,
+
+∆ν(t) = δν98 + ˙ν(t − T98) + D(t, δλ, δβ),
+
+(4)
+
+where ∆ν gives the measured spin frequency relative to
+ν98, the spin frequency measured for the epoch of the
+1998 outburst, T98. Additionally, δν98 gives the correc-
+tion to the spin frequency, ˙ν the spin frequency deriva-
+tive at T98, and D(t, δλ, δβ) the Doppler correction term,
+which is deﬁned as
+D(t, δλ, δβ) = νp
+
+δλ cos(β) cos(ω(t − TΥ) − λ)
+
+(cid:20)
+
+a⊕
+c
+
+ω
+
+(cid:21)
+
++ δβ sin(β) sin(ω(t − TΥ) − λ)
+
+,
+
+(5)
+
+where a⊕ is the Earth’s circular orbital radius, c is
+the speed of light, ω = 2π/P⊕ is the Earth’s circu-
+lar angular frequency, P⊕ is a sidereal year, and TΥ =
+MJD 51079.143 is the epoch of zero degrees ecliptic lon-
+gitude for the Earth’s orbit2. Finally, λ and β give the
+respective source longitude and latitude in ecliptic co-
+ordinates, with δλ and δβ their correction terms. We
+further note that corrections associated with the Earth’s
+orbital eccentricity are negligible, and can be safely ig-
+nored. Applying this model to the data, we obtain a
+good ﬁt (χ2
+r of 1.7 for 3 dof) for a coordinate oﬀset of
+δλ = 0.33(cid:48)(cid:48)±0.10(cid:48)(cid:48) and δβ = −0.60(cid:48)(cid:48)±0.25(cid:48)(cid:48). In Figure 4
+we show how this model ﬁts the spin frequency residuals
+relative to the linear spin-down trend.
+
+Our timing coordinates are oﬀset from the optical po-
+sition by a 2.3σ deviation. This oﬀset is suﬃciently large
+
+2 This occurs when the Earth lies in the direction of the J2000
+vernal equinox (Υ) relative to the Sun, which is approximately
+the date of the northern autumnal equinox (September 23).
+
+Figure 3. Spin frequency evolution of SAX J1808 as mea-
+sured over two decades. Black bullets mark measurements
+made with RXTE . The colored squares give the NICER
+measurements for three phase models (see text). All fre-
+quencies are expressed relative to the 1998 epoch, with
+ν98 = 400.975210371 Hz. The dashed grey line marks the
+reference time of the 2015 outburst, for which an high accu-
+racy pulse frequency measurement is not available (see text).
+The solid line indicates the best ﬁt frequency evolution as de-
+termined in Section 5.1.
+
+that one might wonder if the source shows measurable
+proper motion. To test for proper motion, we substi-
+tuted the constant coordinate oﬀsets in Equation 5 with
+their linear expansion in time, i.e.,
+
+δλ(t) = δλ0 + µλ(t − Toptical)
+δβ(t) = δβ0 + µβ(t − Toptical),
+
+(6)
+(7)
+
+where Toptical = MJD 52703 gives the 2001 June 13 date
+on which the optical data were collected (Hartman et al.
+2008). Assuming the optical position was exactly cor-
+rect (i.e., ﬁxing δλ0 and δβ0 to zero), we obtain a very
+poor ﬁt (χ2
+r of 7.1 for 3 dof). Letting all parameters
+vary yields a χ2
+r of 1.8 for 1 dof, with mean oﬀset of
+δλ0 = 0.33(cid:48)(cid:48)± 0.10(cid:48)(cid:48) and δβ0 = −0.37(cid:48)(cid:48)± 0.40(cid:48)(cid:48), and with
+ill-constrained derivatives of µλ = +0.013 ± 0.10(cid:48)(cid:48) yr−1
+and µβ = −0.04± 0.03(cid:48)(cid:48) yr−1. Hence, the long-term spin
+frequency measurements are best described using a ﬁxed
+position oﬀset. We transform the pulsar timing source
+position to equatorial coordinates, and list them in Ta-
+ble 2, along with the associated spin frequency and its
+derivative.
+
+Finally, we note that similar results can be obtained
+by adopting the spin frequency obtained from the ﬂux-
+adjusted phase model.
+In this case the long term
+spin down was slightly smaller, at ˙ν = (−8.5 ± 0.5) ×
+10−16 Hz s−1, while the measured oﬀset in ecliptic lati-
+tude reduced to δβ = −0.40(cid:48)(cid:48) ± 0.19(cid:48)(cid:48) and the oﬀset in
+ecliptic longitude was δλ = 0.28(cid:48)(cid:48) ± 0.07(cid:48)(cid:48).
+
+Year of outburst
+
+'98 '00 '02    2005 2008 2011 2015
+
+2019
+
+Linear phase model
+Quadratic phase model
+Flux phase model
+
+ 0.2
+
+ 0
+
+-0.2
+
+-0.4
+
+-0.6
+
+)
+z
+H
+μ
+(
+ 
+8
+9
+ν
+ 
+-
+ 
+ν
+
+-0.8
+ 50000
+
+ 52000
+
+ 54000
+
+ 56000
+
+ 58000
+
+ 60000
+
+Time (MJD)
+
+7
+
+Figure 4. Spin frequency measurements relative to the best-
+ﬁt spin-down model (see also Figure 3) as a function of the
+Earth’s ecliptic longitude.
+
+Table 2. Long term timing solution of SAX J1808.
+
+Parameter
+
+R.A.
+
+decl.
+
+Epoch (MJD)
+
+ν ( Hz)
+˙ν ( Hz s−1)
+
+Value
+18h08m27.s647
+−36◦58(cid:48)43.(cid:48)(cid:48)90
+50921.6
+
+400.975210371
+−1.01 × 10−15
+
+Uncertainty
+0.007s
+0.25(cid:48)(cid:48)
+-
+1.4×10−8
+7×10−17
+
+Note—Uncertainties give the 1σ statistical errors. Both the
+spin frequency and its derivative at are deﬁned relative to
+the epoch of the 1998 outburst.
+
+5.2. Orbital period
+
+To study the long-term evolution of the orbital pe-
+riod, we follow the procedure of Hartman et al. (2008)
+and calculate the residual time of passage through the
+ascending node, ∆Tasc, as
+
+∆Tasc = Tasc,i − (Tref + N Pb),
+
+(8)
+
+where we set the reference time to the epoch of the 2002
+outburst, Tref = 52499.96. Additionally, Tasc,i is the
+time of ascending node measured for the ith outburst,
+N is the number of orbital revolutions between the ith
+outburst and Tref , and Pb gives the orbital period re-
+ported by Hartman et al. (2009). These residual delays
+are shown in Figure 5. For context, we also show the
+parabolic model of Hartman et al. (2009), and the resid-
+uals with respect to this model.
+
+The ∆Tasc measured for the 2019 outburst represents
+a signiﬁcant lead with respect to the model of Hart-
+man et al. (2009). From Figure 5 we see that this oﬀ-
+set is a continuation of a recent trend, which suggests
+that the binary orbit has been contracting in the re-
+cent decade. Indeed, when we consider only the second
+
+Figure 5. Top: Residual oﬀset of the Tasc measurements
+relative to predicted times based on the 2002 orbital period
+and reference time (Hartman et al. 2009). The curves show
+parabolic trends ﬁt to the 1998− 2008 (dashed), 2008− 2019
+(dash-dot), and 1998− 2019 (solid) subsets of the data. Mid-
+dle: residuals relative to the 1998 − 2008 parabolic model.
+Bottom: residuals relative to a parabolic model ﬁt to the
+entire dataset. A sinusoid with a 18.2 yr period and 7 s am-
+plitude was added to guide the eye. In all panels the uncer-
+tainties are smaller than the point size.
+
+decade of measurements (2008 through 2019), then we
+can ﬁt the ∆Tasc evolution with a parabolic function
+(χ2
+r of 0.02 for 1 dof). This ﬁt yields an orbital period
+derivative of
+
+˙Pb = (−5.18 ± 0.02) × 10−12 s s−1.
+
+Considering all data, we ﬁnd that the mean long-term
+˙Pb =
+trend of the ∆Tasc yields a period derivative of
+(1.6±0.7)×10−12 s s−1. The residuals around this mean
+trend show a large amplitude oscillation with a period of
+approximately 18.2 years. This oscillation is clearly not
+sinusoidal, and could also not be adequately described
+as time delays due to a third body in an eccentric orbit.
+Instead, this quasi-periodic oscillation is apparently a
+stochastic process that is intrinsic to the dynamics of the
+binary orbit (see, e.g., Patruno et al. 2017; Sanna et al.
+2017, for detailed modeling). What is not clear from the
+available data is whether this quasi-periodic process has
+a ≈ 7 s amplitude around a steadily expanding orbit, or
+if we are seeing a ≈ 20 s amplitude modulation around a
+constant binary period. Additional monitoring of future
+outbursts is needed to diﬀerentiate between these two
+scenarios.
+
+6. DISCUSSION
+
+'08   '02    '11
+
+Year of outburst
+2000
+
+'15   
+   '05
+
+2019
+
+ 0.2
+
+ 0.1
+
+ 0
+
+-0.1
+
+l
+
+)
+z
+H
+μ
+(
+ 
+e
+d
+o
+m
+ν
+ 
+-
+ 
+ν
+
+-0.2
+
+ 0
+
+ 60
+
+ 120
+
+ 180
+
+ 240
+
+ 300
+
+ 360
+
+Ecliptic longitude of Earth (degrees)
+
+'98 '00 2002 2005
+
+2008 2011
+
+2015
+
+2019
+
+ 50
+ 40
+ 30
+ 20
+ 10
+ 0
+
+ 0
+-20
+-40
+ 10
+ 5
+ 0
+-5
+-10
+
+)
+s
+(
+ 
+c
+s
+a
+T
+Δ
+
+)
+s
+(
+ 
+s
+l
+a
+u
+d
+i
+s
+e
+R
+
+)
+s
+(
+ 
+s
+l
+a
+u
+d
+i
+s
+e
+R
+
+52000
+
+54000
+
+56000
+
+58000
+
+Time (MJD)
+
+8
+
+We have presented a coherent timing analysis of the
+2019 outburst of SAX J1808 as observed with NICER.
+We found that over the course of the outburst, the pulse
+phase changes as a function of the count-rate. Consider-
+ing the long-term evolution, we found there is now suﬃ-
+cient data for pulsar timing astrometry. In the following
+we consider some of the implications of these results.
+
+6.1. Spin frequency evolution
+
+We modeled the long-term evolution of the neutron
+star spin frequency by taking into account possible fre-
+quency shifts due to the position uncertainty. We found
+that this model gave a statistically acceptable descrip-
+tion of the measurements, implying that we obtained an
+improved source position through pulsar timing astrom-
+etry. The timing position obtained through this analysis
+is consistent with the optical at a 2.3σ level. Given that
+the 0.15(cid:48)(cid:48) uncertainty in the optical position is set by
+the systematic uncertainty in the 2MASS catalog (Hart-
+man et al. 2008), we investigated if the relatively large
+oﬀset between the optical and pulsar timing positions
+could be explained through proper motion. However, we
+found that no signiﬁcant proper motion could be mea-
+sured from the pulsar timing data.
+
+An important caveat to this analysis is that the aver-
+aged spin frequency measured in each outburst is sub-
+ject to systematic modelling uncertainty (as is clear from
+Table 1). For consistency, we only used spin frequency
+measurements that were obtained using a linear phase
+model (Hartman et al. 2008, 2009). While Patruno
+et al. (2009c) report slightly oﬀset spin frequency mea-
+surements using a ﬂux correction, there is an impor-
+tant distinction between the way we modeled the ﬂux-
+adjustment and their work. Patruno et al. (2009c) de-
+termined the optimal timing solution by minimizing a
+linear ﬁt to the phase-ﬂux correlation, as a function of
+pulse frequency. In contrast, we incorporated the bias
+term directly into the phase model through a physically
+motivated power-law dependence. Hence, the reference
+frame of our ﬂux-adjusted phase model is not guaranteed
+to be the same as that of Patruno et al. (2009c). Be-
+cause a complete reanalysis of the archival RXTE data
+is beyond the scope of this work, we applied our spin-
+down analysis to the linear phase model. While this
+choice may have introduced some bias into our best-ﬁt
+solution, the main implication of our analysis is that we
+now have a suﬃciently long baseline of measurements
+for SAX J1808 that astrometric eﬀects can no longer
+be treated as uncertainties, but instead should be ac-
+counted for in the timing analysis.
+
+Finally, we note that we did not include a spin fre-
+quency measurement from the 2015 outburst. While
+a spin frequency was determined for this outburst us-
+ing XMM-Newton and NuSTAR (Sanna et al. 2017),
+as well as with Chandra (Patruno et al. 2017), each
+of these measurements suﬀers from substantial statisti-
+cal and systematic uncertainty. Speciﬁcally, the XMM-
+
+Newton and NuSTAR data suﬀered from clock drifts,
+which limited the absolute time resolution. The Chan-
+dra data, on the other hand, was collected late in the
+outburst, when the source had already decayed to low
+ﬂux levels. These data have relatively poor statistical
+uncertainty on the frequency measurements. Addition-
+ally, all these observations only sample a very limited
+ﬂux range, and are potentially biased by the ﬂux-phase
+relation.
+
+6.2. Hot-spot drift
+
+We found that, over the course of the 2019 out-
+burst, the pulse phase showed signiﬁcant evolution rel-
+ative to a constant spin frequency model. We at-
+tempted to account for this evolution with two ap-
+proaches: a quadratic phase model, and a ﬂux-adjusted
+phase model.
+
+The quadratic phase model accounts for the phase
+drift by adding a spin frequency derivative to the tim-
+ing model. The physical interpretation of this model is
+that accretion torques applied during outburst are mea-
+surably aﬀecting the spin frequency of the neutron star.
+While this model mostly accounts for the observed phase
+drift, there are signiﬁcant issues with it. First, the resid-
+uals still show a (minor) systematic trend that is not
+consistent with timing noise. Second, the spin frequency
+derivative obtained through this model is anomalous. At
+−3× 10−13 Hz s−1, the derivative implies that the accre-
+tion torque is spinning-down the neutron star. Previous
+outbursts did not show such a spin-down. Although
+some early work on SAX J1808 report spin changes on
+the order of 10−13 Hz s−1 (Morgan et al. 2003; Burderi
+et al. 2007), the sign and magnitude of the derivative
+change depending on how the data are selected, based
+on which Hartman et al. (2008) argued that the observed
+phase changes are actually rooted in the shape changes
+of the pulse waveform. Third, we expect that the ac-
+cretion torque acts in the same manner for every out-
+burst, so by rescaling the apparent spin-down measured
+in 2019 based on the outburst recurrence cycle, we ob-
+tain a long-time averaged accretion-powered spin down
+of −6 × 10−15 Hz s−1. This rate is signiﬁcantly higher
+than the long-term spin down that is actually observed.
+Furthermore, the mean 2019 spin frequency obtained
+from this model is actually larger than the mean spin
+frequency measured during the 2011 outburst, further
+exacerbating this inconsistency. Given these contradic-
+tions, we conclude that the quadratic phase model is not
+physical.
+
+In our second approach, we accounted for the phase
+shifts by adding a ﬂux-dependent adjustment to our tim-
+ing model. The physical interpretation for this phase
+model is that the location of the hot-spot on the stellar
+surface is not ﬁxed.
+Instead, the hot-spot drifts as a
+function of mass accretion rate, causing apparent phase
+shifts that are not related to the stellar rotation (Ro-
+manova et al. 2003; Lamb et al. 2009; Patruno et al.
+
+(Pringle & Rees 1972; Lamb et al. 1973)
+
+(cid:18) µ4
+
+GM ˙M 2
+
+(cid:19)1/7
+
+,
+
+rm = γ2/7
+B
+
+9
+
+where µ is the magnetic dipole moment and γB cap-
+tures the uncertain physics determining the extent of
+the boundary layer where the disk couples to the mag-
+netosphere (Psaltis & Chakrabarty 1999). Numerical
+simulations, however, indicate a weaker dependence on
+mass accretion rate (Kulkarni & Romanova 2013),
+
+(cid:19)1/5
+
+(cid:18)
+
+µ2
+
+GM ˙M R7
+
+rm = 1.06R
+
+,
+
+(11)
+
+Figure 6. Neutron star mass radius constraints from the
+bias scale of the ﬂux-adjusted phase model. The dashed lines
+show iso-contours for the magnetic dipole model parameter
+µ in units of 1026 G cm3, assuming a distance of 3.5 kpc. The
+hatched region illustrates the distance uncertainty, for µ ﬁxed
+at 1.0 × 1026 G cm3.
+
+2009c). To describe the hot-spot drift, we adopted a
+power-law term in our phase model (Equation 3). This
+ﬂux-adjusted model performs signiﬁcantly better than
+the quadratic model discussed above. The spin fre-
+quency obtained through this model is larger than that
+of the linear phase model (by 90 nHz, or 6σ), but still
+broadly consistent with the long term spin-down trend.
+Our choice for a power-law dependence, and its −1/5
+index, was guided by numerical simulations of accre-
+tion onto magnetic stars (Kulkarni & Romanova 2013).
+These simulations indicate that the azimuthal position
+of the hot-spot relative to the magnetic pole scales lin-
+early with the magnetospheric radius as
+
+φ0 ∝ −135◦ rm
+rc
+
+,
+
+(9)
+
+where rm is the magnetospheric radius and rc the co-
+rotation radius. The latter is deﬁned as the radius at
+which the Keplerian orbital frequency matches the spin
+frequency,
+
+(cid:18) GM
+
+(cid:19)1/3
+
+rc =
+
+Ω2
+
+,
+
+(10)
+
+with G the gravitational constant, M the neutron star
+mass, and Ω = 2πνp the angular spin frequency of the
+neutron star. The former is deﬁned as the inner trunca-
+tion radius of the accretion disk, which follows from bal-
+ancing the magnetospheric stresses against the material
+stresses in the accretion disk. The classical deﬁnition is
+
+with R the neutron star radius. The accretion rate can
+be estimated from the bolometric ﬂux through the re-
+lation 4πd2Fbol = GM ˙M /R.
+In Section 3 we further
+assumed that the bolometric ﬂux, Fbol, is proportional
+to the observed count-rate. To calibrate this relation, we
+ﬁt each continuous good time interval using an absorbed
+multi-temperature disk blackbody and a Compontized
+power-law (see also, Papitto et al. 2009; Di Salvo et al.
+2019; Bult et al. 2019a). For each spectrum, we then es-
+timated the bolometric ﬂux by extrapolating the model
+between 0.01 keV and 100 keV. The resulting ﬂuxes were
+indeed nearly proportional to the 0.5 − 10 keV count-
+rate, Λ, with
+
+Fb = κΛ,
+
+(12)
+where we measured κ = 4.14 × 10−12 erg cm−2 ct−1.
+Rewriting these expressions, we ﬁnd, for the azimuthal
+position of the hot-spot,
+
+φ0 ∝ −135◦βΛ−1/5,
+
+(13)
+
+where,
+
+β = 2.92
+
+(cid:20)
+
+×
+
+(cid:20) M
+
+1.4M(cid:12)
+
+(cid:21)−7/30(cid:20) R
+(cid:21)2/5(cid:20)
+
+10 km
+
+(cid:21)1/10
+(cid:21)−2/5
+
+d
+
+µ
+
+1.4 × 1026 G cm3
+
+3.5 kpc
+
+,
+
+(14)
+
+Thus, from theory, we expect that the scale of our count-
+rate dependent bias should be b = −1.09, which is oﬀ-
+set by about 20% from the b = −0.87 that we actually
+measured using our ﬂux-adjusted phase model (Table
+1). This oﬀset can be accounted by varying the neutron
+star parameters within their allowed ranges (Galloway
+& Cumming 2006; Hartman et al. 2008; Goodwin et al.
+2019a), but only if µ < 1.2 × 1026 G cm3 (see Figure 6).
+The magnetic moment of SAX J1808 has been con-
+strained to (0.7−1.4)×1026 G cm3 (Hartman et al. 2008;
+Patruno et al. 2012). The upper limit follows from re-
+lating the long-term spin down trend to magnetic dipole
+radiation. The lower limit is obtained by requiring that,
+at the highest luminosities, the magnetic ﬁeld be strong
+
+3.0
+
+2.5
+
+2.0
+
+1.5
+
+)
+
+M
+
+(
+ 
+s
+s
+a
+M
+
+ 
+r
+a
+t
+S
+ 
+n
+o
+r
+t
+u
+e
+N
+
+1 . 2
+
+1 . 0
+
+0 . 8
+
+1.0
+
+8
+
+9
+
+11
+
+10
+13
+Neutron Star Radius (km)
+
+12
+
+14
+
+15
+
+we only consider the phase residuals, but additional in-
+formation is encoded in the precise shape of the wave-
+form (Poutanen & Gierli´nski 2003; Ibragimov & Pouta-
+nen 2009; Morsink & Leahy 2011), and in its energy
+
+10
+
+enough to truncate the disk at the neutron star radius
+(Psaltis & Chakrabarty 1999), although we note this
+value changes depending on speciﬁc assumptions for the
+source distance and the neutron star parameters (see,
+e.g., Mukherjee et al. 2015, for an overview).
+In this
+context, the upper limit on µ that we obtained through
+the bias scale may indicate that the magnetic dipole
+radiation is not the only source of torque applied to
+the neutron star.
+Instead, an additional torque may
+be present in the form of the propeller mechanism (Il-
+larionov & Sunyaev 1975; D’Angelo & Spruit 2010), or
+gravitational wave emission due to a neutron star mass
+quadrupole (Wagoner 1984; Bildsten 1998; Andersson &
+Kokkotas 2001; Melatos & Payne 2005; Mahmoodifar &
+Strohmayer 2013).
+
+Alternatively, the tension between the magnetic mo-
+ment from the spin-down trend and that from the bias
+scale could be attributed to uncertainties related to the
+disk-magnetosphere boundary region. By determining
+the point at which the magnetic ﬁeld is strong enough
+to force the disk into co-rotation, D’Angelo & Spruit
+(2010) derive the magnetospheric radius as
+
+(cid:18) ηµ2
+
+(cid:19)1/5
+
+rm =
+
+4Ω ˙M
+
+,
+
+(15)
+
+where η parameterizes the poorly understood magnetic
+diﬀusivity of the accretion disk. We point out that this
+relation almost exactly matches Equation 11 when η = 1
+and the neutron star mass and radius are ﬁxed to the
+values used in the simulations of Kulkarni & Romanova
+(2013). The diﬀerent dependence on R is due to the
+assumption of what the orbital velocity at the inner edge
+of the disk should be. Using equation 15 we can derive
+an alternative expression for β as
+
+(cid:20) M
+
+1.4M(cid:12)
+
+(cid:21)−2/15(cid:20) R
+(cid:21)−1/5
+(cid:21)2/5(cid:20)
+(cid:21)−2/5
+
+10 km
+
+d
+
+β = 2.92 × η1/5
+
+(cid:20)
+
+×
+
+µ
+
+1.4 × 1026 G cm3
+
+3.5 kpc
+
+.
+
+(16)
+
+Assuming magnetic dipole radiation is the dominant
+source of spin-down torque (i.e., setting µ = 1.4 ×
+1026 G cm3), we can constrain η to ≈ 0.3−0.4 (see Figure
+7).
+
+While these constraints are subject to the various un-
+certainties in the numerical modelling, the fact that we
+can successfully describe the systematic timing noise us-
+ing a physical model provides a strong argument in favor
+of this interpretation. Additionally, that we can obtain
+reasonable values for the properties of the neutron star
+bodes well for future eﬀorts in detailed waveform mod-
+elling of accreting millisecond pulsars. In this analysis
+
+Figure 7. Neutron star mass radius constraints from the
+bias scale of the ﬂux-adjusted phase model. The dashed
+lines show iso-contours for the magnetic diﬀusivity param-
+eter η, assuming a distance of 3.5 kpc. The hatched region
+illustrates the distance uncertainty, for η ﬁxed at 0.3. The
+magnetic moment has been ﬁxed to µ = 1.4 × 1026 G cm3.
+
+dependence. Hence, comprehensive time-resolved wave-
+form modelling of SAX J1808 may not only reveal the
+neutron star mass and radius, but also constrain the de-
+tailed physics of the disk-magnetosphere boundary re-
+gion.
+
+Facilities: ADS, HEASARC, NICER
+Software: heasoft (v6.26), nicerdas (v6a), tempo2
+
+(Hobbs et al. 2006)
+
+ACKNOWLEDGMENTS
+
+This work was supported by NASA through the
+NICER mission and the Astrophysics Explorers Pro-
+gram, and made use of data and software provided by
+the High Energy Astrophysics Science Archive Research
+Center (HEASARC). P.B. was supported by an NPP
+fellowship at NASA Goddard Space Flight Center.
+
+Andersson, N., & Kokkotas, K. D. 2001, Int. J. Modern
+
+Arzoumanian, Z., Fruchter, A. S., & Taylor, J. H. 1994,
+
+Phys. D, 10, 381
+
+ApJL, 426, L85
+
+REFERENCES
+
+3.0
+
+2.5
+
+2.0
+
+1.5
+
+)
+
+M
+
+(
+ 
+s
+s
+a
+M
+
+ 
+r
+a
+t
+S
+ 
+n
+o
+r
+t
+u
+e
+N
+
+1.0
+
+8
+
+9
+
+0.7
+
+0.6
+
+14
+
+15
+
+0.5
+
+0.4
+
+0.3
+11
+
+10
+13
+Neutron Star Radius (km)
+
+12
+
+11
+
+Bhattacharyya, S., & Strohmayer, T. E. 2007, ApJ, 656, 414
+
+in ’t Zand, J. J. M., van Kerkwijk, M. H., Pooley, D., et al.
+
+Bildsten, L. 1998, ApJL, 501, L89
+
+2001, ApJL, 563, L41
+
+Bult, P., & van der Klis, M. 2015a, ApJL, 798, L29
+
+in ’t Zand, J. J. M., Galloway, D. K., Marshall, H. L., et al.
+
+Bult, P., & van der Klis, M. 2015b, ApJ, 806, 90
+
+2013, A&A, 553, A83
+
+Bult, P., Jaisawal, G. K., G¨uver, T., et al. 2019a, arXiv
+
+Jahoda, K., Markwardt, C. B., Radeva, Y., et al. 2006,
+
+e-prints, arXiv:1909.03595
+
+ApJS, 163, 401
+
+Bult, P. M., Gendreau, K. C., Arzoumanian, Z., et al.
+
+Kulkarni, A. K., & Romanova, M. M. 2013, MNRAS, 433,
+
+2019b, The Astronomer’s Telegram, 13077, 1
+
+3048
+
+Bult, P. M., Gendreau, K. C., Arzoumanian, Z., et al.
+
+Lamb, F. K., Boutloukos, S., Van Wassenhove, S., et al.
+
+2019c, The Astronomer’s Telegram, 13001, 1
+
+2009, ApJL, 705, L36
+
+Burderi, L., Riggio, A., di Salvo, T., et al. 2009, A&A, 496,
+
+Lamb, F. K., Pethick, C. J., & Pines, D. 1973, ApJ, 184,
+
+L17
+
+271
+
+Burderi, L., Di Salvo, T., Lavagetto, G., et al. 2007, ApJ,
+
+Lyne, A. G., & Graham-Smith, F. 1990, Pulsar astronomy
+
+657, 961
+
+(Cambridge: Cambridge University Press)
+
+Cackett, E. M., Altamirano, D., Patruno, A., et al. 2009,
+
+Mahmoodifar, S., & Strohmayer, T. 2013, ApJ, 773, 140
+
+ApJL, 694, L21
+
+Manchester, R. N., & Peters, W. L. 1972, ApJ, 173, 221
+
+Campana, S., & Di Salvo, T. 2018, in Astrophysics and
+
+Manchester, R. N., Taylor, J. H., & Van, Y. Y. 1974, ApJL,
+
+Space Science Library, Vol. 457, Astrophysics and Space
+Science Library, ed. L. Rezzolla, P. Pizzochero, D. I.
+Jones, N. Rea, & I. Vida˜na, 149
+
+Chakrabarty, D., & Morgan, E. H. 1998, Nature, 394, 346
+
+Chakrabarty, D., Morgan, E. H., Muno, M. P., et al. 2003,
+
+Nature, 424, 42
+
+189, L119
+
+Melatos, A., & Payne, D. J. B. 2005, ApJ, 623, 1044
+
+Morgan, E. H., Chakrabarty, D., Wijnands, R., van der
+
+Klis, M., & Markwardt, C. 2003, in AAS/High Energy
+Astrophysics Division #7, AAS/High Energy
+Astrophysics Division, 17.29
+
+D’Angelo, C. R., & Spruit, H. C. 2010, MNRAS, 406, 1208
+
+Morsink, S. M., & Leahy, D. A. 2011, ApJ, 726, 56
+
+di Salvo, T., Burderi, L., Riggio, A., Papitto, A., & Menna,
+
+Mukherjee, D., Bult, P., van der Klis, M., & Bhattacharya,
+
+M. T. 2008, MNRAS, 389, 1851
+
+D. 2015, MNRAS, 452, 3994
+
+Di Salvo, T., Sanna, A., Burderi, L., et al. 2019, MNRAS,
+
+Papitto, A., Di Salvo, T., D’A`ı, A., et al. 2009, A&A, 493,
+
+483, 767
+
+L39
+
+Doroshenko, O., L¨ohmer, O., Kramer, M., et al. 2001,
+
+Parikh, A. S., & Wijnands, R. 2019, The Astronomer’s
+
+A&A, 379, 579
+
+Telegram, 13000, 1
+
+Galloway, D. K., & Cumming, A. 2006, ApJ, 652, 559
+
+Patruno, A., Bult, P., Gopakumar, A., et al. 2012, ApJL,
+
+Gendreau, K., & Arzoumanian, Z. 2017, Nature
+
+746, L27
+
+Astronomy, 1, 895
+
+Patruno, A., Maitra, D., Curran, P. A., et al. 2016, ApJ,
+
+Gierli´nski, M., Done, C., & Barret, D. 2002, MNRAS, 331,
+
+817, 100
+
+141
+
+Patruno, A., Rea, N., Altamirano, D., et al. 2009a,
+
+Goodwin, A. J., Galloway, D. K., Heger, A., Cumming, A.,
+
+MNRAS, 396, L51
+
+& Johnston, Z. 2019a, arXiv e-prints, arXiv:1907.00996
+
+Patruno, A., Watts, A., Klein Wolt, M., Wijnands, R., &
+
+Goodwin, A. J., Russell, D. M., Galloway, D. K., et al.
+
+van der Klis, M. 2009b, ApJ, 707, 1296
+
+2019b, The Astronomer’s Telegram, 12993, 1
+
+Patruno, A., & Watts, A. L. 2012, ArXiv e-prints,
+
+Hartman, J. M., Patruno, A., Chakrabarty, D., et al. 2009,
+
+arXiv:1206.2727 [astro-ph.HE], ads
+
+ApJ, 702, 1673
+
+Patruno, A., Wijnands, R., & van der Klis, M. 2009c,
+
+Hartman, J. M., Patruno, A., Chakrabarty, D., et al. 2008,
+
+ApJL, 698, L60
+
+ApJ, 675, 1468
+
+Patruno, A., Jaodand, A., Kuiper, L., et al. 2017, ApJ, 841,
+
+Hobbs, G. B., Edwards, R. T., & Manchester, R. N. 2006,
+
+98
+
+MNRAS, 369, 655
+
+Poutanen, J., & Gierli´nski, M. 2003, MNRAS, 343, 1301
+
+Ibragimov, A., & Poutanen, J. 2009, MNRAS, 400, 492
+
+Pringle, J. E., & Rees, M. J. 1972, A&A, 21, 1
+
+Illarionov, A. F., & Sunyaev, R. A. 1975, A&A, 39, 185
+
+Psaltis, D., & Chakrabarty, D. 1999, ApJ, 521, 332
+
+in ’t Zand, J. J. M., Heise, J., Muller, J. M., et al. 1998,
+
+Romanova, M. M., Ustyugova, G. V., Koldoba, A. V.,
+
+A&A, 331, L25
+
+Wick, J. V., & Lovelace, R. V. E. 2003, ApJ, 595, 1009
+
+12
+
+Russell, D. M., Goodwin, A. J., Galloway, D. K., et al.
+
+Wagoner, R. V. 1984, ApJ, 278, 345
+
+2019a, The Astronomer’s Telegram, 12964, ads
+
+Russell, D. M., Bramich, D. M., Lewis, F., et al. 2019b,
+
+Astronomische Nachrichten, 340, 278
+
+Wijnands, R., M´endez, M., Markwardt, C., et al. 2001,
+
+Sanna, A., Di Salvo, T., Burderi, L., et al. 2017, MNRAS,
+
+ApJ, 560, 892
+
+471, 463
+
+Standish, E. M. 1998, JPL Planetary and Lunar
+
+Ephemerides, DE405/LE405, JPL Interoﬃce Memo
+312.F-98-048 (Pasadena: NASA Jet Propulsion
+Laboratory)
+
+Wijnands, R., & van der Klis, M. 1998, Nature, 394, 344
+
+
